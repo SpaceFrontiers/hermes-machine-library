@@ -1,0 +1,15 @@
+manifest_version: 1
+name: machine-library
+version: 0.1.0
+description: "Machine Library research search for web_search and web_extract: papers, books, patents, standards and Wikipedia, with citable source links. Requires a Machine Library API key."
+author: Space Frontiers
+kind: backend
+provides_web_providers:
+  - machine-library
+provides_tools: []
+provides_hooks: []
+requires_env:
+  - name: MACHINELIBRARY_API_KEY
+    description: "Machine Library API key (prepaid credits; search costs about $0.02 per 10 results)"
+    url: "https://machinelibrary.ai/keys"
+    secret: true
