@@ -5,7 +5,8 @@ Research search for Hermes's built-in `web_search` and `web_extract` tools.
 standards and Wikipedia, and returns reranked results with links to a stable
 document page, so Hermes can cite where a claim comes from.
 
-- **`web_search`**: results from the scholarly corpus. Each result has the
+- **`web_search`**: results from the server's API profile (Library documents by
+  default). The plugin sends no index selection. Each result has the
   title, document type, authors, publisher and year, the best-matching
   passage, the canonical source identifier (for example
   `doi://10.48550/arXiv.1706.03762` or `iso://1219-1:2012`), and a

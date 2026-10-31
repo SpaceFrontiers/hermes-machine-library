@@ -238,7 +238,7 @@ class MachineLibraryWebSearchProvider(WebSearchProvider):
             response = _request(
                 "POST",
                 "/v2/search/",
-                body={"query": query, "limit": limit, "index_names": ["documents"]},
+                body={"query": query, "limit": limit},
                 timeout=SEARCH_TIMEOUT,
             ) or {}
         except MachineLibraryError as error:

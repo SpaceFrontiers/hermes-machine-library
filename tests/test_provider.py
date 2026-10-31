@@ -104,7 +104,7 @@ def test_search_maps_hits_to_the_web_envelope(calls):
     assert request.get_header("X-api-key") == "ml_test"
     assert request.get_header("X-request-source") == "api"
     body = json.loads(request.data)
-    assert body == {"query": "transformer attention", "limit": 20, "index_names": ["documents"]}
+    assert body == {"query": "transformer attention", "limit": 20}
 
     assert result["success"] is True
     first, second = result["data"]["web"]
