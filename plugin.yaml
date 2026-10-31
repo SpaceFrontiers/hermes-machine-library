@@ -1,6 +1,7 @@
 manifest_version: 1
 name: machine-library
 version: 0.1.1
+requires_hermes: ">=0.20.0"
 description: "Machine Library research search for web_search and web_extract: papers, books, patents, standards and Wikipedia, with citable source links. Requires a Machine Library API key."
 author: Space Frontiers
 kind: backend
